@@ -11,11 +11,11 @@ import login_image from "../../assets/login_image.png";
 
 function Login() {
   return (
-    <Card variant="outlined">
+    <Card variant='outlined'>
       <Grid
         container
-        component="main"
-        sx={{ height: "70vh", width: "100%", maxWidth: 800 }}
+        component='main'
+        sx={{ height: "80vh", width: "100%", maxWidth: 800 }}
       >
         <CssBaseline />
         <Grid
@@ -42,7 +42,7 @@ function Login() {
           sm={8}
           md={5}
           component={Paper}
-          elevation={0}
+          elevation={1}
           square
           sx={{
             display: "flex",
@@ -58,41 +58,41 @@ function Login() {
               alignItems: "center",
             }}
           >
-            <Typography component="h1" variant="h5">
+            <Typography component='h1' variant='h5'>
               Login
             </Typography>
-            <Box component="form" noValidate sx={{ mt: 1 }}>
+            <Box component='form' noValidate sx={{ mt: 1 }}>
               <TextField
-                margin="normal"
+                margin='normal'
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id='email'
+                label='Email Address'
+                name='email'
+                autoComplete='email'
                 autoFocus
               />
               <TextField
-                margin="normal"
+                margin='normal'
                 required
                 fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
+                name='password'
+                label='Password'
+                type='password'
+                id='password'
+                autoComplete='current-password'
               />
 
               <Button
-                type="submit"
+                type='submit'
                 fullWidth
-                variant="contained"
+                variant='contained'
                 sx={{ mt: 3, mb: 2 }}
               >
                 Submit
               </Button>
 
-              <Link to="/Signup">{"Don't have an account? Sign Up"}</Link>
+              <Link to='/Signup'>{"Don't have an account? Sign Up"}</Link>
             </Box>
           </Box>
         </Grid>
