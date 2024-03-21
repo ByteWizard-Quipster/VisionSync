@@ -1,3 +1,17 @@
+import loginImage from "../../assets/images/login_image.png";
 export default function Login() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return (
+    <div className='grid grid-cols-2'>
+      <div className='...'>
+        {" "}
+        <img
+          src={loginImage}
+          className='img-fluid'
+          alt='Padmasana'
+          style={{ height: "80vh" }}
+        />
+      </div>
+      <div className='...'>05</div>
+    </div>
+  );
 }
